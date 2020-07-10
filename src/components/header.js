@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
     </h1>
-    <Link to="/">
+    <Link to="/#contact">
       Contact Us
     </Link>
   </header>

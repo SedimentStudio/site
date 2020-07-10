@@ -113,9 +113,14 @@ const IndexPage = () => {
           {allFile.edges.map((edge, index) => <Img key={index} fixed={edge.node.childImageSharp.fixed} />)}
         </div>
       </section>
-      <section className="container-fluid py-12" style={{backgroundColor: "#EFEBE9"}}>
+      <section id="contact" className="container-fluid py-12" style={{backgroundColor: "#EFEBE9"}}>
         <div className="container mx-auto">
           <SectionHeading>Contact Us</SectionHeading>
+          <a href="mailto:hello@sedimentstudio.com" className="text-3xl block">hello@sedimentstudio.com</a>
+          <a href="tel:+13235245031" className="text-3xl block">+1 323 524 5031</a>
+          <p className="mt-6">
+            Join our community on <a href="https://discord.gg/ZrbTjsd" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
+          </p>
         </div>
       </section>
     </Layout>

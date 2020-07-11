@@ -13,12 +13,10 @@ const Hr = styled.hr.attrs({
 })``
 
 const SectionHeading = styled.h2.attrs({
-  className: "text-3xl mb-10"
+  className: "text-3xl mb-8"
 })``
 
 const IndexPage = () => {
-  // Don't forget to set the size of your image in
-  // fluid(maxWidth: 300, quality: 100) {
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: {
@@ -27,7 +25,7 @@ const IndexPage = () => {
         edges {
           node {
             childImageSharp {
-              fixed(width: 200, quality: 100) {
+              fixed(width: 120, quality: 100) {
                 originalName
                 ...GatsbyImageSharpFixed
               }
@@ -40,33 +38,23 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="grid grid-cols-2 gap-6 container mx-auto py-12">
-        <div className="text-3xl">Full service design and development studio. Your friendly neighborhood group of software experts who want to help.</div>
-        <div style={{ maxWidth: `500px` }}>
+      <section className="grid sm:grid-cols-2 sm:grid-rows-1 sm:grid-flow-col gap-6 items-center container mx-auto pt-6 pb-12 px-10">
+        <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-2">
           <Image />
         </div>
+        <div className="row-auto text-lg text-center sm:text-left sm:text-2xl sm:col-start-1 md:text-3xl">Full service design and development studio. Your friendly neighborhood group of software experts.</div>
       </section>
-      <section className="container-fluid py-12" style={{backgroundColor: "#EFEBE9"}}>
-        <div className="container mx-auto">
+      <section className="container-fluid bg-brown-50 pb-6">
+        <div className="container mx-auto p-10">
           <SectionHeading>Our Services</SectionHeading>
           <Hr />
           <Service
-            title="Product Strategy"
-            description="We validate your idea with future customers, de-risk your roadmap, and set the stage for the development of a product that delights users."
+            title="UI/UX Design"
+            description="We validate your idea with future customers, de-risk your roadmap, and set the stage for the development of a product that delights users. We bring your idea to light by creating renditions of your product that unify stakeholders and get concepts tested by users."
             list={[
               "Ideation & Concepting",
               "User Interviews",
-              "Technical Assessment",
-              "Roadmap Planning",
-            ]}
-          />
-          <Hr />
-          <Service
-            title="UI/UX Design"
-            description="We bring your idea to light by creating renditions of your product that unify stakeholders and test concepts with users."
-            list={[
               "Wireframes",
-              "High Fidelity Mockups",
               "Interactive Prototypes",
               "Graphic Design",
             ]}
@@ -74,12 +62,24 @@ const IndexPage = () => {
           <Hr />
           <Service
             title="Software Engineering"
-            description="We build your product to last, using the latest tools & techniques to ensure your software supports growth at global scale."
+            description="We build your product to last, using the latest tools & techniques to ensure your software is fast and standards-compliant. Our US-based development team writes code that is secure, tested, and driven by best practices."
             list={[
               "Full Stack Engineering",
-              "Platform & DevOps Engineering",
-              "Cloud Architecture",
+              "Backend Optimization",
               "Desktop Applications",
+              "SEO",
+              "Analytics",
+            ]}
+          />
+          <Hr />
+          <Service
+            title="Cloud Architecture"
+            description="We deploy your product on resilient infrastructure that scales globally. Get your project shipped on a solid foundation, optimize your current cloud deployment, or migrate your on-premises software to the cloud."
+            list={[
+              "DevOps",
+              "Site Reliability Engineering",
+              "Continuous Integration & Delivery",
+              "Container Infrastructure",
             ]}
           />
           <Hr />
@@ -87,37 +87,36 @@ const IndexPage = () => {
             title="Marketing &amp; Copywriting"
             description="We bring your product to the world with a focused marketing strategy driven by data and cogent storytelling."
             list={[
-              "SEO",
+              "Branding",
               "Blogs",
-              "Social Media Marketing",
-              "Analytics",
+              "Digital Marketing",
             ]}
           />
           <Hr />
           <Service
-            title="Consulting"
-            description="We help your team move faster with more situational awareness, agility, and certainty."
+            title="Technical Consulting"
+            description="We help you make your next move with agility and situational awareness. Use our 30 years of combined experience to enhance your design and engineering processes."
             list={[
-              "Performance & Security Audit",
-              "Agile Implementation",
               "Design Thinking",
-              "Software Architecture",
+              "Performance & Security Audits",
+              "Agile Implementation",
+              "Technology Evaluation",
             ]}
           />
           <Hr />
         </div>
       </section>
-      <section className="container mx-auto py-12">
+      <section className="container mx-auto px-10 py-12">
         <SectionHeading>We've Worked With</SectionHeading>
-        <div className="grid grid-cols-4 gap-2 items-center" style={{justifyItems: "center"}}>
-          {allFile.edges.map((edge, index) => <Img key={index} fixed={edge.node.childImageSharp.fixed} />)}
+        <div className="grid grid-rows-4 items-center sm:grid-rows-1 sm:grid-cols-4 gap-4 sm:gap-0 pb-6 sm:py-8">
+          {allFile.edges.map((edge, index) => <Img key={index} fixed={edge.node.childImageSharp.fixed} className="mx-auto" />)}
         </div>
       </section>
-      <section id="contact" className="container-fluid py-12" style={{backgroundColor: "#EFEBE9"}}>
-        <div className="container mx-auto">
+      <section id="contact" className="container-fluid bg-brown-50">
+        <div className="container mx-auto px-10 py-12">
           <SectionHeading>Contact Us</SectionHeading>
-          <a href="mailto:hello@sedimentstudio.com" className="text-3xl block">hello@sedimentstudio.com</a>
-          <a href="tel:+13235245031" className="text-3xl block">+1 323 524 5031</a>
+          <a href="mailto:hello@sedimentstudio.com" className="text-2xl block">hello@sedimentstudio.com</a>
+          <a href="tel:+13235245031" className="text-2xl block">+1 323 524 5031</a>
           <p className="mt-6">
             Join our community on <a href="https://discord.gg/ZrbTjsd" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
           </p>

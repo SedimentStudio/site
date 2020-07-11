@@ -3,12 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header className="container mx-auto py-5 mb-5 flex flex-row items-center">
-    <h1 className="text-4xl mr-auto">
-      <Link to="/">
-        {siteTitle}
-      </Link>
-    </h1>
+  <header className="container mx-auto px-10 py-5 flex flex-row items-center">
+    <Link to="/" className="text-3xl mr-auto">
+      {siteTitle}
+    </Link>
     <Link to="/#contact">
       Contact Us
     </Link>

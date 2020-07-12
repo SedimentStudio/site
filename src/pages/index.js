@@ -38,11 +38,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="grid sm:grid-cols-2 sm:grid-rows-1 sm:grid-flow-col gap-6 items-center container mx-auto pt-6 pb-12 px-10">
-        <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-2">
+      <section className="grid sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col gap-6 items-center container mx-auto pt-20 pb-32 px-10 gap-10">
+        <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-3">
           <Image />
         </div>
-        <div className="row-auto text-lg text-center sm:text-left sm:text-2xl sm:col-start-1 md:text-3xl">Full service design and development studio. Your friendly neighborhood group of software experts.</div>
+        <div className="row-auto text-xl text-center sm:text-left sm:text-2xl sm:col-start-1 sm:col-span-2 md:text-3xl">Full service design and development studio.<br />Your friendly neighborhood group of software experts.</div>
       </section>
       <section className="container-fluid bg-brown-50 pb-6">
         <div className="container mx-auto p-10">
@@ -64,11 +64,11 @@ const IndexPage = () => {
             title="Software Engineering"
             description="We build your product to last, using the latest tools & techniques to ensure your software is fast and standards-compliant. Our US-based development team writes code that is secure, tested, and driven by best practices."
             list={[
-              "Full Stack Engineering",
+              "Full Stack Development",
               "Backend Optimization",
-              "Desktop Applications",
-              "SEO",
+              "Ecommerce",
               "Analytics",
+              "Desktop Applications",
             ]}
           />
           <Hr />
@@ -84,17 +84,18 @@ const IndexPage = () => {
           />
           <Hr />
           <Service
-            title="Marketing &amp; Copywriting"
+            title="Marketing & Copywriting"
             description="We bring your product to the world with a focused marketing strategy driven by data and cogent storytelling."
             list={[
-              "Branding",
-              "Blogs",
               "Digital Marketing",
+              "Branding",
+              "SEO",
+              "Blogs",
             ]}
           />
           <Hr />
           <Service
-            title="Technical Consulting"
+            title="Consulting"
             description="We help you make your next move with agility and situational awareness. Use our 30 years of combined experience to enhance your design and engineering processes."
             list={[
               "Design Thinking",
@@ -115,8 +116,9 @@ const IndexPage = () => {
       <section id="contact" className="container-fluid bg-brown-50">
         <div className="container mx-auto px-10 py-12">
           <SectionHeading>Contact Us</SectionHeading>
-          <a href="mailto:hello@sedimentstudio.com" className="text-2xl block">hello@sedimentstudio.com</a>
-          <a href="tel:+13235245031" className="text-2xl block">+1 323 524 5031</a>
+          <a href="mailto:hello@sedimentstudio.com" className="text-2xl">hello@sedimentstudio.com</a>
+          <br />
+          <a href="tel:+13235245031" className="text-2xl">+1 323 524 5031</a>
           <p className="mt-6">
             Join our community on <a href="https://discord.gg/ZrbTjsd" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
           </p>

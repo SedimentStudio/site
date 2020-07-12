@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer className="container-fluid mx-auto bg-gray-600 text-white">
-          <div className="flex container mx-auto px-10 py-8">
+          <div className="flex container mx-auto px-8 py-8 sm:px-10">
             <a href="https://sedimentstudio.com" className="mr-auto">Sediment</a>
             <div>© {new Date().getFullYear()}</div>
           </div>

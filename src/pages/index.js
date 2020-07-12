@@ -38,14 +38,14 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="grid items-center container mx-auto pt-20 pb-32 px-10 gap-10 sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col">
+      <section className="grid items-center container mx-auto pt-20 pb-32 px-8 gap-10 sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col sm:px-10">
         <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-3">
           <TeamImage />
         </div>
         <div className="row-auto text-xl text-center sm:text-left sm:text-2xl sm:col-start-1 sm:col-span-2 md:text-3xl">Full service design and development studio.<br />Your friendly neighborhood group of software experts.</div>
       </section>
       <section className="container-fluid bg-brown-50 pb-6">
-        <div className="container mx-auto p-10">
+        <div className="container mx-auto px-8 py-10 sm:px-10">
           <SectionHeading>Our Services</SectionHeading>
           <Hr />
           <Service
@@ -107,14 +107,14 @@ const IndexPage = () => {
           <Hr />
         </div>
       </section>
-      <section className="container mx-auto px-10 py-12">
+      <section className="container mx-auto px-8 py-12 sm:px-10">
         <SectionHeading>We've Worked With</SectionHeading>
         <div className="grid grid-rows-4 items-center sm:grid-rows-1 sm:grid-cols-4 gap-4 sm:gap-0 pb-6 sm:py-8">
           {allFile.edges.map((edge, index) => <Img key={index} fixed={edge.node.childImageSharp.fixed} className="mx-auto" />)}
         </div>
       </section>
       <section id="contact" className="container-fluid bg-brown-50">
-        <div className="container mx-auto px-10 py-12">
+        <div className="container mx-auto px-8 py-12 sm:px-10">
           <SectionHeading>Contact Us</SectionHeading>
           <a href="mailto:hello@sedimentstudio.com" className="text-2xl">hello@sedimentstudio.com</a>
           <br />

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sediment`,
-    description: `Full service design and development studio. Your friendly neighborhood group of software experts who want to help.`,
+    description: `Full service design and development studio based in Los Angeles. UX/UI Design, Software Engineering, Cloud Architecture, Marketing & Copywriting, and Consulting Services.`,
     author: `@sedimentstudio`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#fafafa`,
         theme_color: `#4e342e`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/sediment-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,

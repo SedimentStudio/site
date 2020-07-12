@@ -2,10 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Wordmark from "../components/wordmark"
+
 const Header = ({ siteTitle }) => (
-  <header className="container mx-auto px-10 py-5 flex flex-row items-center">
+  <header className="container mx-auto p-10 flex flex-row items-center">
     <Link to="/" className="text-3xl mr-auto">
-      {siteTitle}
+      <Wordmark />
     </Link>
     <Link to="/#contact">
       Contact Us

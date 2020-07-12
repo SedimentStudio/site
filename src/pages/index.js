@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Service from "../components/service"
-import Image from "../components/image"
+import TeamImage from "../components/teamImage"
 import SEO from "../components/seo"
 
 const Hr = styled.hr.attrs({
@@ -38,9 +38,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section className="grid sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col gap-6 items-center container mx-auto pt-20 pb-32 px-10 gap-10">
+      <section className="grid items-center container mx-auto pt-20 pb-32 px-10 gap-10 sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col">
         <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-3">
-          <Image />
+          <TeamImage />
         </div>
         <div className="row-auto text-xl text-center sm:text-left sm:text-2xl sm:col-start-1 sm:col-span-2 md:text-3xl">Full service design and development studio.<br />Your friendly neighborhood group of software experts.</div>
       </section>

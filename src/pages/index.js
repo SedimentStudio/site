@@ -37,7 +37,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Design & Development Studio" />
       <section className="grid items-center container mx-auto pt-20 pb-32 px-8 gap-10 sm:grid-cols-3 sm:grid-rows-1 sm:grid-flow-col sm:px-10">
         <div className="row-auto w-48 mx-auto sm:m-0 sm:w-auto sm:col-start-3">
           <TeamImage />
@@ -120,7 +120,7 @@ const IndexPage = () => {
           <br />
           <a href="tel:+13235245031" className="text-2xl">+1 323 524 5031</a>
           <p className="mt-6">
-            Join our community on <a href="https://discord.gg/ZrbTjsd" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
+            Join our community on <a href="https://discord.gg/ZrbTjsd" target="_blank" rel="noopener noreferrer" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
           </p>
         </div>
       </section>

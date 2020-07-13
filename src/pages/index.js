@@ -56,7 +56,7 @@ const IndexPage = () => {
               "User Interviews",
               "Wireframes",
               "Interactive Prototypes",
-              "Graphic Design",
+              "User Testing",
             ]}
           />
           <Hr />
@@ -67,7 +67,7 @@ const IndexPage = () => {
               "Full Stack Development",
               "Backend Optimization",
               "Ecommerce",
-              "Analytics",
+              "Content Management Systems",
               "Desktop Applications",
             ]}
           />

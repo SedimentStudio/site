@@ -19,9 +19,10 @@ const SectionHeading = styled.h2.attrs({
 const IndexPage = () => {
   const { allFile } = useStaticQuery(graphql`
     query {
-      allFile(filter: {
-        relativeDirectory: { eq: "logos" }})
-      {
+      allFile(
+        sort: { fields: [name] },
+        filter: { relativeDirectory: { eq: "logos" }}
+      ) {
         edges {
           node {
             childImageSharp {
@@ -98,6 +99,7 @@ const IndexPage = () => {
             title="Consulting"
             description="We help you make your next move with agility and situational awareness. Use our 30 years of combined experience to enhance your design and engineering processes."
             list={[
+              "Product and Program Management",
               "Design Thinking",
               "Performance & Security Audits",
               "Agile Implementation",
@@ -109,7 +111,7 @@ const IndexPage = () => {
       </section>
       <section className="container mx-auto px-8 py-12 sm:px-10">
         <SectionHeading>We've Worked With</SectionHeading>
-        <div className="grid grid-rows-4 items-center sm:grid-rows-1 sm:grid-cols-4 gap-4 sm:gap-0 pb-6 sm:py-8">
+        <div className="grid grid-rows-4 grid-cols-2 items-center sm:grid-rows-2 sm:grid-cols-4 gap-8 sm:col-gap-0 sm:row-gap-14 pb-6 sm:py-8">
           {allFile.edges.map((edge, index) => <Img key={index} fixed={edge.node.childImageSharp.fixed} className="mx-auto" />)}
         </div>
       </section>

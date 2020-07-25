@@ -26,7 +26,7 @@ const TeamImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Sediment" />
 }
 
 export default TeamImage

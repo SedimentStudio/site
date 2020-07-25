@@ -138,7 +138,7 @@ const IndexPage = () => {
               <input name="email" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-gray-600 text-base px-4 py-2 mb-4 transition-all duration-200" placeholder="Your email address" type="email" />
               <textarea name="message" class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-gray-600 text-base px-4 py-2 mb-4 resize-none transition-all duration-200" placeholder="Message"></textarea>
               <button type="submit" class="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg transition duration-200">Send</button>
-              <p class="text-xs text-gray-500 mt-3">We promise to not share your email address with anyone else.</p>
+              <p class="text-xs text-gray-600 mt-3">We promise to not share your email address with anyone else.</p>
             </form>
           </div>
         </div>

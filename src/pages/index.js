@@ -116,14 +116,30 @@ const IndexPage = () => {
         </div>
       </section>
       <section id="contact" className="container-fluid bg-brown-50">
-        <div className="container mx-auto px-8 py-12 sm:px-16">
-          <SectionHeading>Contact Us</SectionHeading>
-          <a href="mailto:hello@sedimentstudio.com" className="text-2xl">hello@sedimentstudio.com</a>
-          <br />
-          <a href="tel:+13235245031" className="text-2xl">+1 323 524 5031</a>
-          <p className="mt-6">
-            Join our community on <a href="https://discord.gg/ZrbTjsd" target="_blank" rel="noopener noreferrer" className="underline">Discord</a>, where weekly hackathons and workshops take place every Saturday at 1PM Pacific.
-          </p>
+        <div class="text-gray-700 body-font relative">
+          <div class="absolute inset-0 bg-gray-300">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="map"
+              scrolling="no"
+              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=los%20angeles%2C%20ca&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              style={{"filter": "grayscale(1) contrast(1.2) opacity(0.4)"}}>
+            </iframe>
+          </div>
+          <div class="container px-5 py-24 mx-auto flex">
+            <form name="contact" method="POST" data-netlify="true" class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:mr-auto md:ml-10 w-full mt-10 md:mt-0 relative z-10">
+              <h2 class="text-gray-900 text-3xl mb-1 font-medium title-font">Contact Us</h2>
+              <p class="leading-relaxed mb-5 text-gray-600">We'd love to hear about what you're working on.</p>
+              <input name="email" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-gray-600 text-base px-4 py-2 mb-4 transition-all duration-200" placeholder="Your email address" type="email" />
+              <textarea name="message" class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-gray-600 text-base px-4 py-2 mb-4 resize-none transition-all duration-200" placeholder="Message"></textarea>
+              <button type="submit" class="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg transition duration-200">Send</button>
+              <p class="text-xs text-gray-500 mt-3">We promise to not share your email address with anyone else.</p>
+            </form>
+          </div>
         </div>
       </section>
     </Layout>

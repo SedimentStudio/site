@@ -5,7 +5,7 @@ import React from "react"
 import Wordmark from "../components/wordmark"
 
 const Header = () => (
-  <header className="container mx-auto px-8 py-10 flex flex-row items-center sm:px-10">
+  <header className="container mx-auto px-8 py-10 flex flex-row items-center sm:px-16">
     <Link to="/" className="flex text-3xl mr-auto">
       <Wordmark />
     </Link>

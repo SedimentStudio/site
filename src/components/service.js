@@ -5,13 +5,13 @@ const Service = ({ title, list, description }) => {
   return (
     <div className="py-6">
       <h3 className="text-2xl mb-4">{title}</h3>
-      <div className="grid gap-4 sm:grid-rows-1 sm:grid-cols-3">
-        <div className="row-auto sm:col-span-1">
+      <div className="grid gap-4 lg:grid-rows-1 lg:grid-cols-3">
+        <div className="row-auto lg:col-span-1">
           <ul className="list-disc list-inside">
             {list.map((item, index) => <li key={index}>{item}</li>)}
           </ul>
         </div>
-        <div className="row-auto sm:col-span-2">
+        <div className="row-auto lg:col-span-2">
           {description}
         </div>
       </div>

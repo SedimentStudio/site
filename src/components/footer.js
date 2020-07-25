@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer className="container-fluid w-full mx-auto bg-gray-600 text-white">
-      <div className="container px-8 py-8 sm:px-10">
+      <div className="container mx-auto p-8 sm:px-16">
         <div>
           <Img fixed={data.placeholderImage.childImageSharp.fixed} />
         </div>

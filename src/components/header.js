@@ -9,9 +9,9 @@ const Header = () => (
     <Link to="/" className="flex text-3xl mr-auto">
       <Wordmark />
     </Link>
-    <Link to="/blog">
+    {/* <Link to="/blog">
       Blog
-    </Link>
+    </Link> */}
     <Link to="/#contact">
       Contact
     </Link>

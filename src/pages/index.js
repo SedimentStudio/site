@@ -134,6 +134,7 @@ const IndexPage = () => {
             <form name="contact" method="POST" data-netlify="true" class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:mr-auto md:ml-10 w-full mt-10 md:mt-0 relative z-10">
               <h2 class="text-gray-900 text-3xl mb-1 font-medium title-font">Contact Us</h2>
               <p class="leading-relaxed mb-5 text-gray-600">We'd love to hear about what you're working on.</p>
+              <input type="hidden" name="form-name" value="contact" />
               <input name="email" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-gray-600 text-base px-4 py-2 mb-4 transition-all duration-200" placeholder="Your email address" type="email" />
               <textarea name="message" class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-gray-600 text-base px-4 py-2 mb-4 resize-none transition-all duration-200" placeholder="Message"></textarea>
               <button type="submit" class="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg transition duration-200">Send</button>
